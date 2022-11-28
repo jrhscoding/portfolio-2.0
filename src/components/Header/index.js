@@ -3,13 +3,13 @@ import Navigation from '../Navigation';
 
 function Header() {
 
-    const pageSelections = ['about', 'portfolio']
+    const pageSelections = ['about', 'portfolio', 'contact', 'resume']
 
     const [currentPageSelected, setCurrentPageSelected] = useState(pageSelections[0]);
    
     return (
         <div>
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-sm bg-light">
                 <div className="container-fluid">
                     <span className="navbar-brand">JRH's Coding</span>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,12 @@ function Header() {
                             </li>
                             <li className="nav-item">
                                 <span role="button" onClick={() => setCurrentPageSelected(pageSelections[1])} className="nav-link">Projects</span>
+                            </li>
+                            <li className="nav-item">
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[2])} className="nav-link">Contace Me</span>
+                            </li>
+                            <li className="nav-item">
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[3])} className="nav-link">Resume</span>
                             </li>
                         </ul>
                     </div>
