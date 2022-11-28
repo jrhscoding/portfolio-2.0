@@ -3,7 +3,7 @@ import Navigation from '../Navigation';
 
 function Header() {
 
-    const pageSelections = ['about', 'project']
+    const pageSelections = ['about', 'portfolio']
 
     const [currentPageSelected, setCurrentPageSelected] = useState(pageSelections[0]);
    
