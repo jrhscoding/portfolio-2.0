@@ -24,7 +24,7 @@ function Header() {
                                 <span role="button" onClick={() => setCurrentPageSelected(pageSelections[1])} className="nav-link">Projects</span>
                             </li>
                             <li className="nav-item">
-                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[2])} className="nav-link">Contace Me</span>
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[2])} className="nav-link">Contact Me</span>
                             </li>
                             <li className="nav-item">
                                 <span role="button" onClick={() => setCurrentPageSelected(pageSelections[3])} className="nav-link">Resume</span>
