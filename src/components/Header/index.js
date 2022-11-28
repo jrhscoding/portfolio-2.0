@@ -18,16 +18,16 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[0])} className="nav-link pe-auto">About Me</span>
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[0])} className={`nav-link ${currentPageSelected === pageSelections[0] && 'active'}`}>About Me</span>
                             </li>
                             <li className="nav-item">
-                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[1])} className="nav-link">Projects</span>
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[1])} className={`nav-link ${currentPageSelected === pageSelections[1] && 'active'}`}>Projects</span>
                             </li>
                             <li className="nav-item">
-                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[2])} className="nav-link">Contact Me</span>
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[2])} className={`nav-link ${currentPageSelected === pageSelections[2] && 'active'}`}>Contact Me</span>
                             </li>
                             <li className="nav-item">
-                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[3])} className="nav-link">Resume</span>
+                                <span role="button" onClick={() => setCurrentPageSelected(pageSelections[3])} className={`nav-link ${currentPageSelected === pageSelections[3] && 'active'}`}>Resume</span>
                             </li>
                         </ul>
                     </div>
