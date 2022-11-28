@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../Project';
 import Contact from '../Contact';
 import Resume from '../Resume';
+import About from '../About';
 
 function Navigation(props) {
     let { currentPageSelected } = props;
@@ -9,7 +10,7 @@ function Navigation(props) {
     if (currentPageSelected === 'about') {
         return (
             <div>
-                <h1>About Me</h1>
+                <About/>
             </div>
         )
     } else if (currentPageSelected === 'portfolio') {
@@ -31,7 +32,7 @@ function Navigation(props) {
 
         return (
             <div className='container'>
-                <div className='row'>
+                <div className='row mb-5'>
                     <h1 className='my-2'>Portfolio</h1>
                     <Project
                         name={projects[0].name}
