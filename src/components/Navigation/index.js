@@ -33,7 +33,6 @@ function Navigation(props) {
         return (
             <div className='container'>
                 <div className='row mb-5'>
-                    <h1 className='my-2'>Portfolio</h1>
                     <Project
                         name={projects[0].name}
                         image={projects[0].image}
