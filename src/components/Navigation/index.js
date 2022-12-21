@@ -10,7 +10,7 @@ function Navigation(props) {
     if (currentPageSelected === 'about') {
         return (
             <div>
-                <About/>
+                <About />
             </div>
         )
     } else if (currentPageSelected === 'portfolio') {
@@ -27,6 +27,12 @@ function Navigation(props) {
                 image: require('../../assets/img/mind.png'),
                 liveLink: 'https://mind-over-matter-2.herokuapp.com/',
                 githubLink: 'https://github.com/francisca-hernandez/Mind-Over-Matter'
+            },
+            {
+                name: 'Hidden Gems',
+                image: require('../../assets/img/hiddengem.png'),
+                liveLink: 'https://stormy-retreat-53284.herokuapp.com/',
+                githubLink: 'https://github.com/francisca-hernandez/Hidden-Gems'
             }
         ];
 
@@ -44,6 +50,12 @@ function Navigation(props) {
                         image={projects[1].image}
                         liveLink={projects[1].liveLink}
                         githubLink={projects[1].githubLink}
+                    />
+                    <Project
+                        name={projects[2].name}
+                        image={projects[2].image}
+                        liveLink={projects[2].liveLink}
+                        githubLink={projects[2].githubLink}
                     />
                 </div>
             </div>
